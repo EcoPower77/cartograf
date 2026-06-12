@@ -1,0 +1,70 @@
+.md-typeset {
+  font-size: 17px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .md-footer-meta__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .md-footer-meta__inner .md-copyright {
+    font-size: 16px;
+  }
+
+  .md-social {
+    flex-shrink: 0;
+  }
+}
+
+.md-social__link[href*="youtube"] {
+  color: #FF0000 !important;
+}
+
+.md-social__link[href*="t.me"] {
+  color: #2AABEE !important;
+}
+
+[data-md-color-scheme="slate"] {
+  /* Фон — тёплый тёмно-серый */
+  --md-default-bg-color: #1a1a1a;
+  --md-default-bg-color--light: #222222;
+  --md-default-bg-color--lighter: #2a2a2a;
+  --md-default-bg-color--lightest: #333333;
+
+  /* Текст — тёплый светло-серый */
+  --md-default-fg-color: #dcddde;
+  --md-default-fg-color--light: #c8c9ca;
+  --md-default-fg-color--lighter: #999999;
+  --md-default-fg-color--lightest: #555555;
+
+  /* Код */
+  --md-code-bg-color: #141414;
+  --md-code-fg-color: #dcddde;
+
+  /* Хедер */
+  --md-header-bg-color: #111111;
+  
+    --md-default-fg-color--lightest: #2a2a2a;
+}
+
+/* скрытие папки */
+.md-nav__item--nested a[href*="go/"],
+.md-nav__item--nested:has(a[href*="go/"]) {
+  display: none !important;
+}
+
+/* перенос текста в коде */
+.md-typeset pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 17px !important;
+}
+
+
